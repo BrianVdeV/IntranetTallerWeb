@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashboard - Cultivos del Sol</title>
+    <title>Entradas - Cultivos del Sol</title>
     <link rel="shortcut icon" href="img/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
@@ -22,28 +22,45 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4">Dashboard</h1>
+                    <h1 class="mt-4">Registro de Exportaciones</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Exportaciones</li>
                     </ol>
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-chart-area me-1"></i>
-                                    Registro de ingresos en soles
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="formulario">
+                                <div class="product-container">
+                                    <div class="product">
+                                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/20372457-450-450/64576.jpg?v=638023231236300000" alt="Palta">
+                                    </div>
+                                    <div class="product">
+                                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/646178-450-450/88406.jpg?v=637443514194630000" alt="Yuca">
+                                    </div>
+                                    <div class="product">
+                                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/1265150-450-450/124903.jpg?v=637520242280830000" alt="Papa">
+                                    </div>
+                                    <div class="product">
+                                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/518590-450-450/60769.jpg?v=637417681802200000" alt="Tomate">
+                                    </div>
                                 </div>
-                                <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="cantidad">Cantidad:</label>
+                                        <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad exportada">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="destino">Destino:</label>
+                                        <input type="text" class="form-control" id="destino" placeholder="Ingrese el país de destino">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fecha">Fecha:</label>
+                                        <input type="date" class="form-control" id="fecha">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Registrar</button>
+                                </form>
                             </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-chart-bar me-1"></i>
-                                    Ingreso por años
-                                </div>
-                                <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                            </div>
+
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -105,7 +122,7 @@
                                         <td>2012/12/02</td>
                                         <td>$372,000</td>
                                     </tr>
-                                    
+
                                 </tbody>
                             </table>
                         </div>
@@ -115,14 +132,9 @@
             <?php include_once('inc/footer.php'); ?>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="assets/demo/chart-area-demo.js"></script>
-    <script src="assets/demo/chart-bar-demo.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src="js/datatables-simple-demo.js"></script>
 </body>
 
