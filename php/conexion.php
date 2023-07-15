@@ -1,6 +1,6 @@
 <?php
 // Datos de conexión a la base de datos
-$servername = "localhost"; // Nombre del servidor
+$servername = "localhost:3306"; // Nombre del servidor
 $username = "root"; // Nombre de usuario de la base de datos
 $password = ""; // Contraseña de la base de datos
 $dbname = "cultivos"; // Nombre de la base de datos
