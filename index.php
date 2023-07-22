@@ -1,3 +1,9 @@
+<?php
+include_once('php/conexion.php');
+include_once('php/funciones.php');
+revisa_login();
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
