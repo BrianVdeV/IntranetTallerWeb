@@ -29,7 +29,7 @@
         </div>
         <div class="sb-sidenav-footer">
             <div class="small">Iniciado como:</div>
-            Jorge
+            <?php echo nombre_usuario($_SESSION['id_empleado']); ?>
         </div>
     </nav>
 </div>
