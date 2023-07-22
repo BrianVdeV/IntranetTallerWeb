@@ -22,14 +22,14 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
-                                        <form>
+                                        <form action="php/proceso-login.php" method="post">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                                <label for="inputEmail">Email</label>
+                                                <input class="form-control" name="txtCorreo" id="txtContra" type="email" placeholder="name@example.com" />
+                                                <label for="txtEmail">Email</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
-                                                <label for="inputPassword">contraseña</label>
+                                                <input class="form-control" name="txtContra" id="txtContra" type="password" placeholder="Password" />
+                                                <label for="txtContra">contraseña</label>
                                             </div>
                                             <div class="form-check mb-3">
                                                 <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
@@ -37,7 +37,7 @@
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <a class="small" href="password.php">Olvidaste tu contraseña?</a>
-                                                <a class="btn btn-primary" href="index.php">Login</a>
+                                                <input class="btn btn-primary" type="submit" value="Ingresar"></input>
                                             </div>
                                         </form>
                                     </div>
