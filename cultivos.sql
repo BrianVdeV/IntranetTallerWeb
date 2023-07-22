@@ -83,6 +83,6 @@ END //
 
 DELIMITER ;
 
-CALL InsertarEmpleado('Nombre del empleado', 'Apellido del empleado', 'correo@ejemplo.com', 'contraseña123');
-
+CALL InsertarEmpleado('Cosme', 'Fulanito', 'correo@ejemplo.com', 'contraseña123');
+CALL InsertarEmpleado('Jorge', 'Velez de Villa', 'jorgebrianvdv@gmail.com', 'jorge');
 
