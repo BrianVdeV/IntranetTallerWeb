@@ -3,11 +3,11 @@ create database cultivos;
 use cultivos;
 
 create table productos(
-id_producto varchar(10) primary key,
+id_producto int auto_increment primary key,
 nomprod varchar(20),
-descripcion varchar(50),
-precio int(11),
-stock int(11));
+cantidad int,
+destino varchar(25),
+fecha varchar(25));
 
 
 
@@ -15,8 +15,8 @@ create table empleados(
 id_empleado int auto_increment primary key,
 nombre varchar(20),
 apellido varchar(50),
-correo varchar(50),
-contra varchar(25));
+correo varchar(50) not null,
+contra varchar(25) not null);
 
 
 create table clientes(
@@ -57,7 +57,7 @@ create table detalle_pedidos(
 id_det_ped varchar(10) primary key,
 id_empleado int,
 id_pedido varchar(10),
-id_producto varchar(10),
+id_producto int,
 cantidad int(11),
 precuni int(11),
 foreign key (id_empleado) references empleados(id_empleado),
@@ -83,6 +83,20 @@ END //
 
 DELIMITER ;
 
+DELIMITER //
+CREATE PROCEDURE InsertarProducto(
+  IN p_nomprod varchar(20),
+  IN p_cantidad int,
+  IN p_destino varchar(25),
+  IN p_fecha varchar(25)
+)
+BEGIN
+  INSERT INTO productos (nomprod, cantidad, destino, fecha)
+  VALUES (p_nomprod, p_cantidad, p_destino, p_fecha);
+END //
+DELIMITER ;
+
 CALL InsertarEmpleado('Cosme', 'Fulanito', 'correo@ejemplo.com', 'contraseña123');
 CALL InsertarEmpleado('Jorge', 'Velez de Villa', 'jorgebrianvdv@gmail.com', 'jorge');
+CALL InsertarProducto('Producto A', 100, 'Destino A', '2023-07-21');
 

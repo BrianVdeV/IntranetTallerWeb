@@ -60,7 +60,9 @@
                                             </div>
                                         </div>
                                         <div class="mt-4 mb-0">
-                                            <div class="d-grid"><a class="btn btn-primary btn-block" href="php/">crear una cuenta</a><input type="submit" value="Enviar"></div>
+                                            <div class="d-grid">
+                                                <input class="btn btn-primary btn-block" type="submit" value="Enviar">
+                                            </div>
                                         </div>
                                     </form>
                                 </div>

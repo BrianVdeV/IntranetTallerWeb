@@ -37,21 +37,35 @@ revisa_login();
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="formulario">
-                                <div class="product-container">
-                                    <div class="product">
-                                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/20372457-450-450/64576.jpg?v=638023231236300000" alt="Palta">
+                                <form action="php/proceso-expo.php" method="post">
+                                    <div class="product-container">
+                                        <div class="product">
+                                            <label>
+                                                <input type="checkbox" class="chk-producto" data-producto="Palta" name="productos[]" value="Palta">
+                                                <img src="https://plazavea.vteximg.com.br/arquivos/ids/20372457-450-450/64576.jpg?v=638023231236300000" alt="Palta">
+                                            </label>
+                                        </div>
+                                        <div class="product">
+                                            <label>
+                                                <input type="checkbox" class="chk-producto" data-producto="Yuca" name="productos[]" value="Yuca">
+                                                <img src="https://plazavea.vteximg.com.br/arquivos/ids/646178-450-450/88406.jpg?v=637443514194630000" alt="Yuca">
+                                            </label>
+                                        </div>
+                                        <div class="product">
+                                            <label>
+                                                <input type="checkbox" class="chk-producto" data-producto="Papa" name="productos[]" value="Papa">
+                                                <img src="https://plazavea.vteximg.com.br/arquivos/ids/1265150-450-450/124903.jpg?v=637520242280830000" alt="Papa">
+
+                                            </label>
+                                        </div>
+                                        <div class="product">
+                                            <label>
+                                                <input type="checkbox" class="chk-producto" data-producto="Tomate" name="productos[]" value="Tomate">
+                                                <img src="https://plazavea.vteximg.com.br/arquivos/ids/518590-450-450/60769.jpg?v=637417681802200000" alt="Tomate">
+                                            </label>
+                                        </div>
                                     </div>
-                                    <div class="product">
-                                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/646178-450-450/88406.jpg?v=637443514194630000" alt="Yuca">
-                                    </div>
-                                    <div class="product">
-                                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/1265150-450-450/124903.jpg?v=637520242280830000" alt="Papa">
-                                    </div>
-                                    <div class="product">
-                                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/518590-450-450/60769.jpg?v=637417681802200000" alt="Tomate">
-                                    </div>
-                                </div>
-                                <form>
+
                                     <div class="form-group">
                                         <label for="cantidad">Cantidad:</label>
                                         <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad exportada">
